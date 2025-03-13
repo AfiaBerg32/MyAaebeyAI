@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.v17_290 {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(245,245,254,1);
+  opacity: 1;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  padding: 20px;
+  margin: 0 auto;
+}
+.v52_94 {
+  width: 350px;
+  color: rgba(0,0,255,1);
+  position: absolute;
+  top: 59px;
+  left: 321px;
+  font-family: Instrument Sans;
+  font-weight: Bold;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+  margin: 5px auto 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+ 
+}
+ h3{
+  width: 236px;
+  height: 80px;
+  color: #646467;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  
+}
+
+.v52_91 {
+  width: 178px;
+  height: 182px;
+  background: url(v52_91.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  
+}
+
+.next-btn{
+  left: 50%;
+  top: 90%;
+  bottom: 5%;
+  padding: 5px 25% 5px;
+  border: none;
+  width: 370px;
+  height: 50px;
+  color: blue;
+  background: transparent;  
+  border: 2px solid blue;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: large;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 1;
+  position: absolute;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  left: 50%;
+  top: 90%;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  
+}
+/*.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: blue;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 80%;
+}*/
+
+i,a{
+  left: 100%;
+  top: 90%;
+  bottom: 5%;
+  padding: 0px 10px;
+}

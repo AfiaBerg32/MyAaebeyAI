@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(245, 245, 254, 1);
+  opacity: 1;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 14px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Sidebar */
+.section {
+  width: 60px;
+  height: 100%;
+  background: rgba(51, 105, 255, 1);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.v69_269 {
+  width: 53px;
+  height: 51px;
+  background: rgba(243, 243, 253, 1);
+  opacity: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 27px;
+  height: 40px;
+  background-image: url("ai.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 25px;
+  left: 16px;
+}
+
+.next-tab, .new-message, .qr-scan, .v70_61 {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.next-tab {
+  background-image: url("tab.png");
+}
+
+.new-message {
+  background-image: url("msg.png");
+}
+
+.qr-scan {
+  background-image: url("scan.png");
+  margin-top: auto;
+}
+
+.v70_61 {
+  background: rgba(217, 217, 217, 1);
+  border-radius: 50%;
+}
+
+/* Main Chat Area */
+.chat-container {
+  margin-left: 80px; /* Offset for sidebar */
+  width: calc(100% - 80px); /* Adjust width to account for sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.txt1 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 11%;
+}
+
+p {
+  color: rgba(0, 0, 0, 1);
+  font-size: 10px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 1.5%;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
+/* Chat Input Area */
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  width: 500px; /* Same width as DeepSeek */
+  min-height: 50px;
+  max-height: 250px; /* Maximum height before scrolling */
+  margin: 20px auto;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+  position: relative; /* For positioning controls */
+}
+
+.chat-area textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  min-height: 40px;
+  resize: none; /* Disable manual resizing */
+  font-size: 16px;
+  padding: 15px;
+  line-height: 1.4;
+  overflow-y: hidden; /* Hide scrollbar initially */
+  border-radius: 20px;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.chat-area textarea::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+/* Controls Container */
+.controls-container {
+  display: flex;
+  justify-content: flex-end; /* Align controls to the right */
+  gap: 10px; /* Space between controls */
+  position: absolute; /* Position inside chat-area */
+  bottom: 10px; /* Distance from bottom */
+  right: 15px; /* Distance from right */
+}
+
+.microphone, .file-attached, .send {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.microphone {
+  background-image: url("microphone.png");
+}
+
+.file-attached {
+  background-image: url("file.png");
+}
+
+.send {
+  background-image: url("img8.png");
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .section {
+    display: none; /* Hide sidebar on smaller screens */
+  }
+
+  .chat-container {
+    margin-left: 0; /* Remove sidebar offset */
+    width: 100%; /* Take full width */
+  }
+
+  .chat-area {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 500px; /* Limit maximum width */
+  }
+}
